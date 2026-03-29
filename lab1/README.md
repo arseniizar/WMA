@@ -1,4 +1,4 @@
-# LAB1 — Red Object Detection and Tracking
+# LAB1 — Red Object Detection & Tracking
 
 Detects and tracks a red object in a video using HSV color segmentation and moment-based localization. Displays live deviation from the frame center.
 
