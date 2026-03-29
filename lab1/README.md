@@ -4,13 +4,6 @@ Detects and tracks a red object in a video using HSV color segmentation and mome
 
 ## Demo
 
-
-## Requirements
-
-```
-pip install opencv-python numpy
-```
-
 ## Usage
 
 ```bash
