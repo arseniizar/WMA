@@ -4,7 +4,7 @@ Detects and tracks a red object in a video using HSV color segmentation and mome
 
 ## Demo
 
-![3891FE2A-AD1B-4F37-8A17-815587FFE8FB_1_102_o](https://github.com/user-attachments/assets/13373a50-f728-47d2-b5b2-be57d18abdbc)
+https://www.youtube.com/watch?v=LaFmGDamhkE
 
 ## Usage
 
