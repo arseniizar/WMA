@@ -1,0 +1,13 @@
+train: images/train
+val: images/val
+test: ../test/images
+
+nc: 1
+names: ['object']
+
+roboflow:
+  workspace: arseniis-workspace-lzjhz
+  project: my-first-project-7ycz8
+  version: dataset
+  license: CC BY 4.0
+  url: https://universe.roboflow.com/arseniis-workspace-lzjhz/my-first-project-7ycz8/dataset/dataset
