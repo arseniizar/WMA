@@ -63,6 +63,13 @@ def process_video(path: str):
         print("ERROR: cannot read first frame", file=sys.stderr)
         return
 
+    # --- VIDEO WRITER SETUP ---
+    fps = cap.get(cv2.CAP_PROP_FPS) or 30.0
+    width = int(cap.get(cv2.CAP_PROP_FRAME_WIDTH))
+    height = int(cap.get(cv2.CAP_PROP_FRAME_HEIGHT))
+    fourcc = cv2.VideoWriter_fourcc(*'mp4v') # MP4 Codec
+    out_video = cv2.VideoWriter('lab4_output.mp4', fourcc, fps, (width, height))
+
     prev_gray  = cv2.cvtColor(first, cv2.COLOR_BGR2GRAY)
     prev_pts   = detect_features(prev_gray)
     traj_mask  = np.zeros_like(first)
@@ -91,6 +98,9 @@ def process_video(path: str):
         cv2.putText(output, f"tracking: {len(good_curr)} pts", (10, 25),
                     cv2.FONT_HERSHEY_SIMPLEX, 0.6, (200, 200, 200), 1, cv2.LINE_AA)
 
+        # --- SAVE THE FRAME TO THE VIDEO FILE ---
+        out_video.write(output)
+
         cv2.imshow("optical flow", output)
 
         if cv2.waitKey(30) & 0xFF in (ord("q"), 27):
@@ -99,8 +109,11 @@ def process_video(path: str):
         prev_gray = curr_gray.copy()
         prev_pts  = good_curr.reshape(-1, 1, 2)
 
+    # Cleanup and finalize video file
     cap.release()
+    out_video.release()
     cv2.destroyAllWindows()
+    print("✅ Successfully saved 'lab4_output.mp4'")
 
 
 def main():
