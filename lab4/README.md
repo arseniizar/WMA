@@ -3,7 +3,11 @@
 Tracks feature points across video frames using Shi-Tomasi detection and Lucas-Kanade optical flow. Draws colored motion trajectories for each tracked point.
 
 ## Demo Video
-https://github.com/user-attachments/assets/81597520-6cbf-44ee-8fd7-3f63e2c395c4
+
+
+https://github.com/user-attachments/assets/7ee92a8d-0951-4701-b990-a37c44d47fae
+
+
 
 ## Usage
 
