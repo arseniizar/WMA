@@ -5,7 +5,7 @@ Tracks feature points across video frames using Shi-Tomasi detection and Lucas-K
 ## Demo Video
 
 
-https://github.com/user-attachments/assets/7ee92a8d-0951-4701-b990-a37c44d47fae
+[VIDEO](https://github.com/user-attachments/assets/7ee92a8d-0951-4701-b990-a37c44d47fae)
 
 
 
