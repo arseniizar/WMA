@@ -2,6 +2,10 @@
 
 Detects and tracks a reference object in images and video using local feature descriptors (ORB, BRISK, or SIFT).
 
+## Demo video
+
+<img width="800" height="424" alt="ezgif-51cf8bf11e74cdca" src="https://github.com/user-attachments/assets/e79df259-c1ec-488b-9f69-c3a5fee332ed" />
+
 ## Usage
 
 ```bash
